@@ -2,7 +2,7 @@
 
 A short personality quiz that recommends **three specific coffees from three different Bengaluru cafes**, each with a reason, plus a database of **3,286 coffees across 227 popular cafes and chains** built mostly with free tools.
 
-> **Status (2026-10-06):** the database, the tagging and the quiz app are built and tested (100 unit tests, about 190 browser tests on phone, tablet and desktop sizes, an exhaustive run over all 262,144 possible answer sets). Still to do: push to GitHub and deploy on Vercel (course lessons 4.4 and 4.5), then finish this README (live link, screenshot). `REQUIREMENTS.md` is the source of truth for what the project does, `IMPLEMENTATION.md` for how it is built; this file does not repeat their rules.
+> **Status (2026-10-06):** the database, the tagging and the quiz app are built and tested (100 unit tests, about 190 browser tests on phone, tablet and desktop sizes, an exhaustive run over all 262,144 possible answer sets). The code is on GitHub (public). Still to do: deploy on Vercel (course lesson 4.5), then add the live link and a screenshot here. `REQUIREMENTS.md` is the source of truth for what the project does, `IMPLEMENTATION.md` for how it is built; this file does not repeat their rules.
 
 ## 1. About this project
 
@@ -145,10 +145,8 @@ data/derive_cafe_facts.py  ->  data/menu_signals.py  ->  data/merge_vibe.py  -> 
 
 ## 6. What is next
 
-1. **Lesson 4.3:** build the quiz page in the empty `web/` folder (the lesson's setup command needs an empty folder), using `data/quiz_data.json`. The build brief is section 0 of `REQUIREMENTS.md`.
-2. Iteration round 1 on the app (phases in `REQUIREMENTS.md` section 9, step 10), then the detailed caricature set in the next sub-module.
-3. Push to a GitHub repo (public, by my choice) and deploy on Vercel (lessons 4.4 and 4.5). The course path and its small differences are in `REQUIREMENTS.md` section 0.
-4. Finish this README: how to run the app, how to test it, and a screenshot.
+1. Deploy on Vercel (lesson 4.5) and add the live link and a screenshot to this README. The course path and its small differences are in `REQUIREMENTS.md` section 0.
+2. Further iteration on the app (phases in `REQUIREMENTS.md` section 9), then the detailed caricature set.
 
 ## 7. Declarations: sources, attribution and methods
 
@@ -185,7 +183,14 @@ The scene photos on the result page are hand-picked from [Openverse](https://ope
 
 If you own a business or a source listed here and want something removed or corrected, open an issue on this repository and it will be taken down promptly.
 
-## 8. Documents
+## 8. Licence
+
+- **Code** (the Python scripts in `data/`, `crawl/` and `scripts/`, and the quiz app in `web/`) is under the [MIT Licence](LICENSE).
+- **Data** (`data/*.csv`, `data/quiz_data.json`, `web/public/quiz_data.json`) is **not** covered by the MIT licence. It was compiled from the sources in section 7.1 and remains subject to their terms. In particular, locations derived from OpenStreetMap are under the [ODbL](https://www.openstreetmap.org/copyright) and need the attribution "© OpenStreetMap contributors", and menu and listing content belongs to the venues and platforms. It is shared for learning and non-commercial use only; check each source's terms before any other use.
+- **Photos** shown in the app are linked, not stored, and keep their own Creative Commons licences and credits (`design/image-credits.md`).
+- **Written documents and design notes** (`REQUIREMENTS.md`, `IMPLEMENTATION.md`, `specs/`, `design/`) are shared for reading and learning; please credit this project if you reuse them.
+
+## 9. Documents
 
 - Spec (PRD): [`REQUIREMENTS.md`](REQUIREMENTS.md)
 - Implementation (how it is built, and how we found and fixed the coverage blocker): [`IMPLEMENTATION.md`](IMPLEMENTATION.md)
