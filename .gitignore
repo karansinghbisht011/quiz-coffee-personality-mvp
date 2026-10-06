@@ -1,0 +1,15 @@
+# local environment and caches
+.venv-crawl/
+__pycache__/
+.DS_Store
+node_modules/
+.next/
+.env
+.env.*
+
+# kept locally, not needed to run or understand the project
+archive/
+data/universe.csv
+
+# scratch output of the photo-discovery scripts (regenerate with scripts/find_photos.py)
+scripts/out/

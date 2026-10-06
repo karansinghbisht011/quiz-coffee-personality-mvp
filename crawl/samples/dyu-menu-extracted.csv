@@ -1,0 +1,24 @@
+coffee_item,price,description,menu_section
+Press Coffee,240,Handground coffee served piping hot in a french press! Brew away! (Milk and sugar served on the side),Hot Drinks
+Espresso,140,Classic coffee brewed in moka pot,Hot Drinks
+Americano,180,Espresso shot served with hot water. Your classic black coffee,Hot Drinks
+Dopio,180,Double shot of espresso,Hot Drinks
+Macchiato,120,Single espresso shot topped with a dollop of milk foam,Hot Drinks
+Cappuccino,200,Espresso shot topped with rich frothed milk and a dash of cinnamon,Hot Drinks
+Cafe Latte,200,One-third espresso topped with rich frothed milk,Hot Drinks
+Affogato,220,Vanilla ice cream topped with a shot of hot espresso,Hot Drinks
+Melange,230,Cappuccino topped with a generous amount of whipped cream,Hot Drinks
+Cafe Miel,220,"A shot of espresso topped with steam milk, a dash of cinnamon and served with wild honey",Hot Drinks
+Salted Caramel Latte,220,"A rich and indulgent coffee crafted with smooth espresso, creamy steamed milk, and luscious buttery caramel. Finished with a delicate touch of sea salt",Hot Drinks
+Filter Coffee,130,"A traditional brew made by slowly dripping freshly ground coffee through a steel filter to create a strong, aromatic decoction",Hot Drinks
+Cafe Mocha,220,A blissful mix of coffee and chocolate,Hot Drinks
+Chukku Kappi (Masala Coffee),110,"Heavenly infusion of Indian spices, palm jaggery and coffee",Hot Drinks
+Cold Coffee (Iced Coffee),220,"Espresso topped with ice, served with milk and sugar on the side",Cold Drinks
+Coffee Frappe,250,A blend of frozen espresso and sweetened milk and fresh cream,Cold Drinks
+Iced Americano,190,Freshly brewed espresso topped with ice and water,Cold Drinks
+Cold Brew Coffee,200,In house coffee brewed and steeped over 20 hours,Cold Drinks
+Vietnamese Iced Coffee,230,Strong coffee topped with sweetened condensed milk and ice,Cold Drinks
+Espresso Freddo (Water/Soda),190,"A combination of espresso topped with ice, water/soda",Cold Drinks
+Cold Mocha,260,Chilled espresso and chocolate topped with cold milk and ice,Cold Drinks
+Iced Caramel Latte,220,"A blend of espresso, chilled milk, and rich caramel served over ice",Cold Drinks
+Iced Coconut Water Americano,220,A classic twist coffee made with espresso and naturally sweet coconut water over ice,Cold Drinks

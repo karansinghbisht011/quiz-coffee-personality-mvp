@@ -1,0 +1,346 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Photo shortlist</title>
+<style>body{font:15px/1.4 system-ui,sans-serif;margin:0;background:#f6f0e6;color:#25231f}header{position:sticky;top:0;background:#fffaf2;border-bottom:1px solid #d9cdbd;padding:12px 20px;z-index:2}
+h1{font-size:20px;margin:0 0 4px}p{margin:2px 0}main{padding:8px 20px 60px;max-width:1300px;margin:auto}h2{margin:28px 0 10px}h2 small{font-weight:400;color:#655b51}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}.card{display:block;background:#fff;border:2px solid #d9cdbd;border-radius:14px;overflow:hidden;cursor:pointer}
+.card:has(input:checked){border-color:#4f6648}.card:has(input:not(:checked)){opacity:.45;border-style:dashed}.card input{position:absolute;margin:10px;width:20px;height:20px}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#e8ded0}.meta{padding:10px 12px}.by,.alt{color:#655b51;font-size:13px;margin-top:4px}.alt{font-style:italic}
+.badge{font-size:12px;border-radius:99px;padding:2px 8px;margin-left:4px}.bn{background:#dfe7d5;color:#2f4a28}.ot{background:#fde7c4;color:#7a4a00}.un{background:#e8e4de;color:#555}
+.lic{font-size:12px;border:1px solid #bbb;border-radius:99px;padding:1px 7px}.q{font-size:12px;color:#6f4a8e}button{font:inherit;padding:8px 14px;border-radius:10px;border:1px solid #6b452d;background:#6b452d;color:#fff;cursor:pointer;margin-top:6px}
+#out{width:100%;height:70px;margin-top:6px;font:12px monospace}</style></head><body>
+<header><h1>Bengaluru scene photos: please review (66 photos)</h1>
+<p>Tick the photos you want in the quiz; untick any you dislike (unticked ones fade). Orange badges are photos from another place: they will be captioned with that real place, never as Bengaluru.</p>
+<p>Photos load from Wikimedia Commons and carry their licence and author. Nothing is stored in the project.</p>
+<button onclick="go()">Copy my choices</button> <span id="n"></span><textarea id="out" readonly placeholder="Your choices appear here: paste them back to Claude"></textarea></header>
+<main><section><h2>Autorickshaw <small>8 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-Indian_Tuk-tuk.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Tuk-tuk.jpg?width=330" alt="Tuk-tuk in Bangalore 2023.">
+<div class="meta"><b>Indian Tuk-tuk.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Rathfelder &middot; 4160 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Indian_Tuk-tuk.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Tuk-tuk in Bangalore 2023.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Trees_on_either_side_of_Inner_Ring_Road_-_Koramangala.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Trees_on_either_side_of_Inner_Ring_Road_-_Koramangala.JPG?width=330" alt="Trees on either side of Inner Ring Road - Koramangala.">
+<div class="meta"><b>Trees on either side of Inner Ring Road - Koramangala.JPG</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC0</span>
+<div class="by">Veera.sj &middot; 4608 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Trees_on_either_side_of_Inner_Ring_Road_-_Koramangala.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Trees on either side of Inner Ring Road - Koramangala.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Marathahalli_ring_road_side_view_8136.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Marathahalli_ring_road_side_view_8136.JPG?width=330" alt="Marathahalli ring road side snap.">
+<div class="meta"><b>Marathahalli ring road side view 8136.JPG</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Rameshng &middot; 3648 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Marathahalli_ring_road_side_view_8136.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Marathahalli ring road side snap.</div></div></label><label class="card"><input type="checkbox" data-id="commons-The_Streets_of_Bangalore.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Streets_of_Bangalore.jpg?width=330" alt="A typical street in downtown Bangalore.">
+<div class="meta"><b>The Streets of Bangalore.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY 2.0</span>
+<div class="by">Eirik Refsdal from Trondheim, NORWAY &middot; 3395 px &middot; <a href="https://commons.wikimedia.org/wiki/File:The_Streets_of_Bangalore.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">A typical street in downtown Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-BangaloreRickshaw.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/BangaloreRickshaw.jpg?width=330" alt="Auto Rickshaw in en:Bangalore, with the Vidhana Soudha in the background.">
+<div class="meta"><b>BangaloreRickshaw.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">en:User:nikkul &middot; 2383 px &middot; <a href="https://commons.wikimedia.org/wiki/File:BangaloreRickshaw.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Auto Rickshaw in en:Bangalore, with the Vidhana Soudha in the background.</div></div></label><label class="card"><input type="checkbox" data-id="commons-An_auto_driver_cleaning_his_auto.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/An_auto_driver_cleaning_his_auto.jpg?width=330" alt="An auto driver cleaning his auto from a nearby leaking running water.">
+<div class="meta"><b>An auto driver cleaning his auto.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Saiphani02 &middot; 6000 px &middot; <a href="https://commons.wikimedia.org/wiki/File:An_auto_driver_cleaning_his_auto.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">An auto driver cleaning his auto from a nearby leaking running water.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Bangalore_Autorickshaws_and_guy_on_phone_November_2011_-2-4.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangalore_Autorickshaws_and_guy_on_phone_November_2011_-2-4.jpg?width=330" alt="India Cellphone and Tech Images November 2011.">
+<div class="meta"><b>Bangalore Autorickshaws and guy on phone November 2011 -2-4.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Victorgrigas &middot; 5184 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bangalore_Autorickshaws_and_guy_on_phone_November_2011_-2-4.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">India Cellphone and Tech Images November 2011.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Auto_Rickshaw_Stand_in_Ramamurthy_Nagar.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Auto_Rickshaw_Stand_in_Ramamurthy_Nagar.jpg?width=330" alt="Auto Rickshaw Stand in Ramamurthy Nagar.">
+<div class="meta"><b>Auto Rickshaw Stand in Ramamurthy Nagar.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Suresh.vinay &middot; 3264 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Auto_Rickshaw_Stand_in_Ramamurthy_Nagar.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Auto Rickshaw Stand in Ramamurthy Nagar.</div></div></label></div></section><section><h2>Traffic police <small>7 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-Interceptor_of_Bangalore_Traffic_Police.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Interceptor_of_Bangalore_Traffic_Police.jpg?width=330" alt="Interceptor of Bangalore Traffic Police.">
+<div class="meta"><b>Interceptor of Bangalore Traffic Police.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC0</span>
+<div class="by">Bharathiya &middot; 3264 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Interceptor_of_Bangalore_Traffic_Police.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Interceptor of Bangalore Traffic Police.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Siddhartha_Nagar_Police_Station_Mysore_May23_A7C_04924.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Siddhartha_Nagar_Police_Station_Mysore_May23_A7C_04924.jpg?width=330" alt="Siddhartha Nagara Traffic Police Station, Mysore, Karnataka, India.">
+<div class="meta"><b>Siddhartha Nagar Police Station Mysore May23 A7C 04924.jpg</b>
+<span class="badge ot">Mysuru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">This Photo was taken by Timothy A. Gonsalves. Feel free to u &middot; 4516 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Siddhartha_Nagar_Police_Station_Mysore_May23_A7C_04924.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Siddhartha Nagara Traffic Police Station, Mysore, Karnataka, India.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Kolkata_Traffic_Police_(14660359638).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kolkata_Traffic_Police_%2814660359638%29.jpg?width=330" alt="Kolkata Traffic Police.">
+<div class="meta"><b>Kolkata Traffic Police (14660359638).jpg</b>
+<span class="badge ot">Kolkata</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Paul Hamilton &middot; 3854 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Kolkata_Traffic_Police_(14660359638).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Kolkata Traffic Police.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Goa_Police_Suzuki_Ertiga_in_traffic_jam.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Goa_Police_Suzuki_Ertiga_in_traffic_jam.jpg?width=330" alt="Police car on the bridge Traffic Jam ahead P.S. Nice cutie light bar.">
+<div class="meta"><b>Goa Police Suzuki Ertiga in traffic jam.jpg</b>
+<span class="badge ot">Goa</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Joegoauk Goa &middot; 3648 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Goa_Police_Suzuki_Ertiga_in_traffic_jam.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Police car on the bridge Traffic Jam ahead P.S. Nice cutie light bar.</div></div></label><label class="card"><input type="checkbox" data-id="commons-India_-_Kolkata_traffic_cop_-_3661.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/India_-_Kolkata_traffic_cop_-_3661.jpg?width=330" alt="A constable traffic policeman directing taxis Calcutta Kolkata India.">
+<div class="meta"><b>India - Kolkata traffic cop - 3661.jpg</b>
+<span class="badge ot">Kolkata</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Jorge Royan &middot; 3504 px &middot; <a href="https://commons.wikimedia.org/wiki/File:India_-_Kolkata_traffic_cop_-_3661.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">A constable traffic policeman directing taxis Calcutta Kolkata India.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Kolkata_25,_traffic_police_(24193118523).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kolkata_25%2C_traffic_police_%2824193118523%29.jpg?width=330" alt="viewed from a tram, near &lt;a href=&quot;https://en.wikipedia.org/wiki/Tipu_Sultan_Mosque&quot; rel=&quot;nofollow&quot;&gt;Tipu Sultan Mosque&lt;/a&gt;.">
+<div class="meta"><b>Kolkata 25, traffic police (24193118523).jpg</b>
+<span class="badge ot">Kolkata</span> <span class="lic">CC BY 2.0</span>
+<div class="by">juggadery &middot; 2023 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Kolkata_25,_traffic_police_(24193118523).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">viewed from a tram, near &lt;a href=&quot;https://en.wikipedia.org/wiki/Tipu_Sultan_Mosque&quot; rel=&quot;nofollow&quot;&gt;Tipu Sultan Mosque&lt;/a&gt;.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Deputy_Commissioner_of_Police,_Central_Division,_Bangalore_City_(2025).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Deputy_Commissioner_of_Police%2C_Central_Division%2C_Bangalore_City_%282025%29.jpg?width=330" alt="Deputy Commissioner of Police, Central Division, Bangalore City (2025).">
+<div class="meta"><b>Deputy Commissioner of Police, Central Division, Bangalore City (2025)</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Gpkp &middot; 4080 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Deputy_Commissioner_of_Police,_Central_Division,_Bangalore_City_(2025).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Deputy Commissioner of Police, Central Division, Bangalore City (2025).</div></div></label></div></section><section><h2>Traffic jam <small>7 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-Traffic_Jam_near_Industrial_estate_A_Reddy.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Traffic_Jam_near_Industrial_estate_A_Reddy.jpg?width=330" alt="Traffic Jam near Industrial estate A Reddy.">
+<div class="meta"><b>Traffic Jam near Industrial estate A Reddy.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">IM3847 &middot; 4032 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Traffic_Jam_near_Industrial_estate_A_Reddy.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Traffic Jam near Industrial estate A Reddy.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Trafic_In_Bangalore.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Trafic_In_Bangalore.jpg?width=330" alt="This shows daily life of Bangalore.Picture is of a peak hour in ring road of Bangalore.">
+<div class="meta"><b>Trafic In Bangalore.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Diptiprakashpalai &middot; 1632 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Trafic_In_Bangalore.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">This shows daily life of Bangalore.Picture is of a peak hour in ring road of Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Rush_Hour_Majestic_Bus_Stand.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rush_Hour_Majestic_Bus_Stand.jpg?width=330" alt="Rush hour at Majestic Bus Stand, Bangalore.">
+<div class="meta"><b>Rush Hour Majestic Bus Stand.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">PDM</span>
+<div class="by">Bhonsley &middot; 2048 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Rush_Hour_Majestic_Bus_Stand.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Rush hour at Majestic Bus Stand, Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Flyover_to_Bangalore_Airport,_July_2014.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Flyover_to_Bangalore_Airport%2C_July_2014.JPG?width=330" alt="The six lane flyover to Kempegowda Airport Bangalore.">
+<div class="meta"><b>Flyover to Bangalore Airport, July 2014.JPG</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Sunnya343 &middot; 4000 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Flyover_to_Bangalore_Airport,_July_2014.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">The six lane flyover to Kempegowda Airport Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Namma_Metro_flyover,_Rajarajeshwari_Nagar,_Bangalore_(2025).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Namma_Metro_flyover%2C_Rajarajeshwari_Nagar%2C_Bangalore_%282025%29.jpg?width=330" alt="Namma Metro flyover, Rajarajeshwari Nagar, Bangalore (2025).">
+<div class="meta"><b>Namma Metro flyover, Rajarajeshwari Nagar, Bangalore (2025).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Gpkp &middot; 4080 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Namma_Metro_flyover,_Rajarajeshwari_Nagar,_Bangalore_(2025).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Namma Metro flyover, Rajarajeshwari Nagar, Bangalore (2025).</div></div></label><label class="card"><input type="checkbox" data-id="commons-Aerial_photographs_of_Bangalore_(2022).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_photographs_of_Bangalore_%282022%29.jpg?width=330" alt="Aerial view above Rashtreeya Vidyalaya Road metro station.">
+<div class="meta"><b>Aerial photographs of Bangalore (2022).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Nutan Parag &middot; 5472 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Aerial_photographs_of_Bangalore_(2022).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Aerial view above Rashtreeya Vidyalaya Road metro station.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Bangalore_Electronic_City_Fly_Over_(Elevated_HighWay)_1355.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangalore_Electronic_City_Fly_Over_%28Elevated_HighWay%29_1355.jpg?width=330" alt="Snap from Electronic City Fly Over (Elevated highway), Bangalore.">
+<div class="meta"><b>Bangalore Electronic City Fly Over (Elevated HighWay) 1355.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Rameshng &middot; 4000 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bangalore_Electronic_City_Fly_Over_(Elevated_HighWay)_1355.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Snap from Electronic City Fly Over (Elevated highway), Bangalore.</div></div></label></div></section><section><h2>Weather and clouds <small>10 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-BDA_Link_Road_-_after_rain_(2022)_01.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/BDA_Link_Road_-_after_rain_%282022%29_01.jpg?width=330" alt="BDA Link Road, near to Dwarakanagar, Channasandra, Rajarajeshwari Nagar, Bangalore.">
+<div class="meta"><b>BDA Link Road - after rain (2022) 01.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Gpkp &middot; 4000 px &middot; <a href="https://commons.wikimedia.org/wiki/File:BDA_Link_Road_-_after_rain_(2022)_01.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">BDA Link Road, near to Dwarakanagar, Channasandra, Rajarajeshwari Nagar, Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Bangalore_BTM_View_in_rainy_Clouds.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangalore_BTM_View_in_rainy_Clouds.jpg?width=330" alt="Shot taken by me Location BTM Layout 2 Bangalore by Mi note 3.">
+<div class="meta"><b>Bangalore BTM View in rainy Clouds.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Umakantkutar &middot; 4608 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bangalore_BTM_View_in_rainy_Clouds.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Shot taken by me Location BTM Layout 2 Bangalore by Mi note 3.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Rain_clouds_over_Bangalore_City_railway_station_JEG2334.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rain_clouds_over_Bangalore_City_railway_station_JEG2334.JPG?width=330" alt="Rain clouds over Bangalore City railway station.">
+<div class="meta"><b>Rain clouds over Bangalore City railway station JEG2334.JPG</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">P Jeganathan &middot; 4928 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Rain_clouds_over_Bangalore_City_railway_station_JEG2334.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Rain clouds over Bangalore City railway station.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Rain_over_Bangalore_City_railway_station_JEG2356.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rain_over_Bangalore_City_railway_station_JEG2356.JPG?width=330" alt="Rain over Bangalore City railway station.">
+<div class="meta"><b>Rain over Bangalore City railway station JEG2356.JPG</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">P Jeganathan &middot; 4928 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Rain_over_Bangalore_City_railway_station_JEG2356.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Rain over Bangalore City railway station.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Rain_tree_avenue.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rain_tree_avenue.jpg?width=330" alt="Rain trees on old airport road, Bangalore.">
+<div class="meta"><b>Rain tree avenue.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Shyamal L. &middot; 4160 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Rain_tree_avenue.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Rain trees on old airport road, Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Rainy_Days_in_Bangalore_(9372085002).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rainy_Days_in_Bangalore_%289372085002%29.jpg?width=330" alt="Overcast Skies and Continuous Drizzles! A great monsoon in Bangalore [2013].">
+<div class="meta"><b>Rainy Days in Bangalore (9372085002).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Ashwin Kumar from Bangalore, India &middot; 4928 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Rainy_Days_in_Bangalore_(9372085002).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Overcast Skies and Continuous Drizzles! A great monsoon in Bangalore [2013].</div></div></label><label class="card"><input type="checkbox" data-id="commons-Bangalore_sunset_(8530482219).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangalore_sunset_%288530482219%29.jpg?width=330" alt="Bangalore sunset.">
+<div class="meta"><b>Bangalore sunset (8530482219).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Silver Blu3 &middot; 5184 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bangalore_sunset_(8530482219).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Bangalore sunset.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Chaotic_Sunset.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Chaotic_Sunset.jpg?width=330" alt="A view of the sunset from my terrace in Bangalore.">
+<div class="meta"><b>Chaotic Sunset.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Ananyabal &middot; 4032 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Chaotic_Sunset.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">A view of the sunset from my terrace in Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Purple_Sky_(7982176747).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Purple_Sky_%287982176747%29.jpg?width=330" alt="Purple Sky.">
+<div class="meta"><b>Purple Sky (7982176747).jpg</b>
+<span class="badge un">place not stated</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Saad Faruque from Bangalore, India &middot; 5145 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Purple_Sky_(7982176747).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Purple Sky.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Clouds_before_rain_in_Dwarakanagar,_Channasandra,_RR_Nagar,_Bangalore_(2024)_01.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Clouds_before_rain_in_Dwarakanagar%2C_Channasandra%2C_RR_Nagar%2C_Bangalore_%282024%29_01.jpg?width=330" alt="Clouds before rain in Dwarakanagar, Channasandra, RR Nagar, Bangalore (2024).">
+<div class="meta"><b>Clouds before rain in Dwarakanagar, Channasandra, RR Nagar, Bangalore </b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Gpkp &middot; 4080 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Clouds_before_rain_in_Dwarakanagar,_Channasandra,_RR_Nagar,_Bangalore_(2024)_01.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Clouds before rain in Dwarakanagar, Channasandra, RR Nagar, Bangalore (2024).</div></div></label></div></section><section><h2>Signal and junctions <small>6 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-M.G._Road-Brigade_Road_Junction_at_night_(1).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/M.G._Road-Brigade_Road_Junction_at_night_%281%29.jpg?width=330" alt="M.G. Road-Brigade Road Junction at night.">
+<div class="meta"><b>M.G. Road-Brigade Road Junction at night (1).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Ashwin Kumar from Bangalore, India &middot; 4928 px &middot; <a href="https://commons.wikimedia.org/wiki/File:M.G._Road-Brigade_Road_Junction_at_night_(1).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">M.G. Road-Brigade Road Junction at night.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Oriental_Buildings,_Bangalore.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Oriental_Buildings%2C_Bangalore.jpg?width=330" alt="Oriental Buildings, Bangalore.">
+<div class="meta"><b>Oriental Buildings, Bangalore.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC0</span>
+<div class="by">Wilhelm Tell DCCXLVI &middot; 4752 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Oriental_Buildings,_Bangalore.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Oriental Buildings, Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Bangalore_junction_1.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangalore_junction_1.JPG?width=330" alt="Bangalore junction 1.">
+<div class="meta"><b>Bangalore junction 1.JPG</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Sivahari &middot; 3648 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bangalore_junction_1.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Bangalore junction 1.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Silk_Board_(4660852488).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Board_%284660852488%29.jpg?width=330" alt="Traffic at Silk Board.">
+<div class="meta"><b>Silk Board (4660852488).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Ashwin Kumar from Bangalore, India &middot; 2592 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Silk_Board_(4660852488).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Traffic at Silk Board.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Bangalore_India_traffic.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangalore_India_traffic.jpg?width=330" alt="Bangalore India traffic.">
+<div class="meta"><b>Bangalore India traffic.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY 2.0</span>
+<div class="by">Eirik Refsdal from Trondheim, NORWAY &middot; 3456 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bangalore_India_traffic.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Bangalore India traffic.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Dharwad_railway_station_road,_Malmaddi.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dharwad_railway_station_road%2C_Malmaddi.jpg?width=330" alt="Dharwad railway station road, Malmaddi, Dharwad, Karnataka.">
+<div class="meta"><b>Dharwad railway station road, Malmaddi.jpg</b>
+<span class="badge ot">Dharwad, Karnataka</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">5JHScms &middot; 3264 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Dharwad_railway_station_road,_Malmaddi.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Dharwad railway station road, Malmaddi, Dharwad, Karnataka.</div></div></label></div></section><section><h2>Landmarks and street life <small>10 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-Vidhana_Soudha,_front_(01).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Vidhana_Soudha%2C_front_%2801%29.jpg?width=330" alt="Vidhana Soudha (facade), Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka, India.">
+<div class="meta"><b>Vidhana Soudha, front (01).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span> <span class="q">quality image</span>
+<div class="by">Moheen Reeyad &middot; 3872 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Vidhana_Soudha,_front_(01).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Vidhana Soudha (facade), Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka, India.</div></div></label><label class="card"><input type="checkbox" data-id="commons-BANGALORE_PALACE.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/BANGALORE_PALACE.jpg?width=330" alt="Bangalore palace on a cloudy day.">
+<div class="meta"><b>BANGALORE PALACE.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Basavaraj M &middot; 5568 px &middot; <a href="https://commons.wikimedia.org/wiki/File:BANGALORE_PALACE.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Bangalore palace on a cloudy day.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Flower_show_at_Lalbagh_botanical_garden_2026_(76921).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Flower_show_at_Lalbagh_botanical_garden_2026_%2876921%29.jpg?width=330" alt="Flower show at Lalbagh botanical garden 2026 (76921).">
+<div class="meta"><b>Flower show at Lalbagh botanical garden 2026 (76921).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Kaartic &middot; 4096 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Flower_show_at_Lalbagh_botanical_garden_2026_(76921).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Flower show at Lalbagh botanical garden 2026 (76921).</div></div></label><label class="card"><input type="checkbox" data-id="commons-Glass_House-1-lalbagh-bangaluru-India.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Glass_House-1-lalbagh-bangaluru-India.jpg?width=330" alt="Glass House.">
+<div class="meta"><b>Glass House-1-lalbagh-bangaluru-India.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Yercaud-elango &middot; 4000 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Glass_House-1-lalbagh-bangaluru-India.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Glass House.</div></div></label><label class="card"><input type="checkbox" data-id="commons-St._Mark&#x27;s_Cathedral,_Bangalore.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/St._Mark%27s_Cathedral%2C_Bangalore.jpg?width=330" alt="St. Mark&#x27;s was constructed between 1808 and 1812 as Garrison Church. It was consecrated in 1816 by the Bishop of Calcutta.">
+<div class="meta"><b>St. Mark&#x27;s Cathedral, Bangalore.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Kanad Sanyal &middot; 4928 px &middot; <a href="https://commons.wikimedia.org/wiki/File:St._Mark%27s_Cathedral,_Bangalore.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">St. Mark&#x27;s was constructed between 1808 and 1812 as Garrison Church. It was consecrated in 1816 by the Bishop of Calcutta.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Dasarahalli_metro_station.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dasarahalli_metro_station.jpg?width=330" alt="Dasarahalli metro station.">
+<div class="meta"><b>Dasarahalli metro station.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">LittleT889 &middot; 4032 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Dasarahalli_metro_station.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Dasarahalli metro station.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Commercial_Street,_Bangalore_(7870975840).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Commercial_Street%2C_Bangalore_%287870975840%29.jpg?width=330" alt="IMG_5254.jpg.">
+<div class="meta"><b>Commercial Street, Bangalore (7870975840).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 2.0</span>
+<div class="by">Saad Faruque from Bangalore, India &middot; 5184 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Commercial_Street,_Bangalore_(7870975840).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">IMG_5254.jpg.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Shree_Dodda_Ganapathi_Temple.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shree_Dodda_Ganapathi_Temple.jpg?width=330" alt="Shree Dodda Ganapathi Temple is located in Basavanagudi, Bengaluru.">
+<div class="meta"><b>Shree Dodda Ganapathi Temple.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">ANKAN &middot; 4000 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Shree_Dodda_Ganapathi_Temple.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Shree Dodda Ganapathi Temple is located in Basavanagudi, Bengaluru.</div></div></label><label class="card"><input type="checkbox" data-id="commons-City_Flower_Market.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/City_Flower_Market.jpg?width=330" alt="Flower Market at KR City Market in Bangalore showing vendors selling flowers. The photo was taken from top through the flags covering the ceiling.">
+<div class="meta"><b>City Flower Market.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Advay m &middot; 3977 px &middot; <a href="https://commons.wikimedia.org/wiki/File:City_Flower_Market.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Flower Market at KR City Market in Bangalore showing vendors selling flowers. The photo was taken from top through the flags covering the ceiling.</div></div></label><label class="card"><input type="checkbox" data-id="commons-5thStreet-Kammanahalli,Bangalore-02.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/5thStreet-Kammanahalli%2CBangalore-02.jpg?width=330" alt="Kammanahalli,Bangalore.">
+<div class="meta"><b>5thStreet-Kammanahalli,Bangalore-02.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC0</span>
+<div class="by">VideshiBhaktNRI &middot; 4032 px &middot; <a href="https://commons.wikimedia.org/wiki/File:5thStreet-Kammanahalli,Bangalore-02.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Kammanahalli,Bangalore.</div></div></label></div></section><section><h2>Tech park <small>10 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-Bengaluru_Business_park_road.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bengaluru_Business_park_road.jpg?width=330" alt="Business park road in Banglore.">
+<div class="meta"><b>Bengaluru Business park road.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">IM3847 &middot; 4032 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bengaluru_Business_park_road.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Business park road in Banglore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Sunset_at_Nagawara,_Bangalore_(2019).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sunset_at_Nagawara%2C_Bangalore_%282019%29.jpg?width=330" alt="Aerial shot of Bangalore city of Nagawara area.">
+<div class="meta"><b>Sunset at Nagawara, Bangalore (2019).jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">KshitizBathwal / Skyscape Photography &middot; 4048 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Sunset_at_Nagawara,_Bangalore_(2019).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Aerial shot of Bangalore city of Nagawara area.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Bagmane_Tech_Park,_Bangalore_(2024)_107.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bagmane_Tech_Park%2C_Bangalore_%282024%29_107.jpg?width=330" alt="Kelagiankare lake Bagmane Tech Park, Byrasandra, C. V. Raman Nagar Post, Bangalore 560093.">
+<div class="meta"><b>Bagmane Tech Park, Bangalore (2024) 107.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Gpkp &middot; 4080 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Bagmane_Tech_Park,_Bangalore_(2024)_107.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Kelagiankare lake Bagmane Tech Park, Byrasandra, C. V. Raman Nagar Post, Bangalore 560093.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Electronic_City_Phase_2.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Electronic_City_Phase_2.jpg?width=330" alt="A view of Electronic City Phase 2 in Bangalore, India.">
+<div class="meta"><b>Electronic City Phase 2.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">HokuroN &middot; 4608 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Electronic_City_Phase_2.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">A view of Electronic City Phase 2 in Bangalore, India.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Tech_Mahindra,_Electronic_City_Bangalore_campus.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tech_Mahindra%2C_Electronic_City_Bangalore_campus.jpg?width=330" alt="Tech Mahindra campus in Electronic City, Bangalore, India.">
+<div class="meta"><b>Tech Mahindra, Electronic City Bangalore campus.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">HokuroN &middot; 4608 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Tech_Mahindra,_Electronic_City_Bangalore_campus.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Tech Mahindra campus in Electronic City, Bangalore, India.</div></div></label><label class="card"><input type="checkbox" data-id="commons-IBM_Manyata_office_-_View_from_Lumbini_garden_1.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/IBM_Manyata_office_-_View_from_Lumbini_garden_1.JPG?width=330" alt="View from Lumbini Garden, near to Nagwara lake, Bangalore.">
+<div class="meta"><b>IBM Manyata office - View from Lumbini garden 1.JPG</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Rameshng &middot; 3648 px &middot; <a href="https://commons.wikimedia.org/wiki/File:IBM_Manyata_office_-_View_from_Lumbini_garden_1.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">View from Lumbini Garden, near to Nagwara lake, Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Twin_towers_of_Bangalore_-_panoramio.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Twin_towers_of_Bangalore_-_panoramio.jpg?width=330" alt="Twin towers of Bangalore.">
+<div class="meta"><b>Twin towers of Bangalore - panoramio.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY 3.0</span>
+<div class="by">Pramath &middot; 3072 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Twin_towers_of_Bangalore_-_panoramio.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Twin towers of Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-ITPL-Whitefield-Bangalore1.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/ITPL-Whitefield-Bangalore1.jpg?width=330" alt="International Technology Park Limited, Bangalore.">
+<div class="meta"><b>ITPL-Whitefield-Bangalore1.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">PageImp &middot; 2048 px &middot; <a href="https://commons.wikimedia.org/wiki/File:ITPL-Whitefield-Bangalore1.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">International Technology Park Limited, Bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-DELL_International_Services,_Whitefield,_bangalore_-_panoramio.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/DELL_International_Services%2C_Whitefield%2C_bangalore_-_panoramio.jpg?width=330" alt="DELL International Services, Whitefield, bangalore.">
+<div class="meta"><b>DELL International Services, Whitefield, bangalore - panoramio.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY 3.0</span>
+<div class="by">ramansahu &middot; 1632 px &middot; <a href="https://commons.wikimedia.org/wiki/File:DELL_International_Services,_Whitefield,_bangalore_-_panoramio.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">DELL International Services, Whitefield, bangalore.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Electronic_City,_Bangalore,_India.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Electronic_City%2C_Bangalore%2C_India.jpg?width=330" alt="Udupi Upahara Restaurant.">
+<div class="meta"><b>Electronic City, Bangalore, India.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC0</span>
+<div class="by">Prof tpms &middot; 4080 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Electronic_City,_Bangalore,_India.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Udupi Upahara Restaurant.</div></div></label></div></section><section><h2>Window-seat view with a cup (our drawn hand and tumbler go in front) <small>8 photos</small></h2><div class="grid"><label class="card"><input type="checkbox" data-id="commons-Filter_kaapi.JPG" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Filter_kaapi.JPG?width=330" alt="filter coffee is a culture in the south of india. It has a distinct flavour as chickory is added to it.">
+<div class="meta"><b>Filter kaapi.JPG</b>
+<span class="badge un">place not stated</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Vallari.a &middot; 5184 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Filter_kaapi.JPG" target="_blank" rel="noopener">source</a></div>
+<div class="alt">filter coffee is a culture in the south of india. It has a distinct flavour as chickory is added to it.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Memorable_Coffee.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Memorable_Coffee.jpg?width=330" alt="Memorable Coffee.">
+<div class="meta"><b>Memorable Coffee.jpg</b>
+<span class="badge un">place not stated</span> <span class="lic">CC0</span>
+<div class="by">K.Sreeram 2603 &middot; 4608 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Memorable_Coffee.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Memorable Coffee.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Idli_Sambar_with_traditional_Filter_Kaapi.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Idli_Sambar_with_traditional_Filter_Kaapi.jpg?width=330" alt="Typical south indian Idli Sambar with Filter Kaapi (Coffee), traditionally served.">
+<div class="meta"><b>Idli Sambar with traditional Filter Kaapi.jpg</b>
+<span class="badge un">place not stated</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">JayanandS &middot; 4208 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Idli_Sambar_with_traditional_Filter_Kaapi.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Typical south indian Idli Sambar with Filter Kaapi (Coffee), traditionally served.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Idli-sambar_and_coffee_at_Udupi_Upahar,_Wilson_Garden,_Bangalore_(2025-09-19).jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Idli-sambar_and_coffee_at_Udupi_Upahar%2C_Wilson_Garden%2C_Bangalore_%282025-09-19%29.jpg?width=330" alt="Idli-sambar and coffee at Udupi Upahar, Wilson Garden, Bangalore (2025-09-19).">
+<div class="meta"><b>Idli-sambar and coffee at Udupi Upahar, Wilson Garden, Bangalore (2025</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">Contrapunctus-1 &middot; 4096 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Idli-sambar_and_coffee_at_Udupi_Upahar,_Wilson_Garden,_Bangalore_(2025-09-19).jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Idli-sambar and coffee at Udupi Upahar, Wilson Garden, Bangalore (2025-09-19).</div></div></label><label class="card"><input type="checkbox" data-id="commons-Coffee_House_2.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_House_2.jpg?width=330" alt="It&#x27;s a South Indian breakfast place in seetha circle.">
+<div class="meta"><b>Coffee House 2.jpg</b>
+<span class="badge bn">Bengaluru</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">Rakshika_Prasad &middot; 4160 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Coffee_House_2.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">It&#x27;s a South Indian breakfast place in seetha circle.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Signboard_of_a_coffee_shop_in_Coorg,_Karnataka.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Signboard_of_a_coffee_shop_in_Coorg%2C_Karnataka.jpg?width=330" alt="Signboard of a coffee shop in Coorg, Karnataka.">
+<div class="meta"><b>Signboard of a coffee shop in Coorg, Karnataka.jpg</b>
+<span class="badge ot">Coorg, Karnataka</span> <span class="lic">CC BY-SA 3.0</span>
+<div class="by">psubhashish &middot; 3264 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Signboard_of_a_coffee_shop_in_Coorg,_Karnataka.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Signboard of a coffee shop in Coorg, Karnataka.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Coffee_Singnally_Coorg_Jun24_A7CR_01495.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_Singnally_Coorg_Jun24_A7CR_01495.jpg?width=330" alt="Lush green coffee bushes after onset of SW monsoon, Singnally, Somwarpet, Coorg, Karnataka, India.">
+<div class="meta"><b>Coffee Singnally Coorg Jun24 A7CR 01495.jpg</b>
+<span class="badge ot">Coorg, Karnataka</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">This Photo was taken by Timothy A. Gonsalves. Feel free to u &middot; 9504 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Coffee_Singnally_Coorg_Jun24_A7CR_01495.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Lush green coffee bushes after onset of SW monsoon, Singnally, Somwarpet, Coorg, Karnataka, India.</div></div></label><label class="card"><input type="checkbox" data-id="commons-Coffee_Shade_Trees_Paddy_Fields_Coorg_Feb24_R16_07670.jpg" checked>
+<img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_Shade_Trees_Paddy_Fields_Coorg_Feb24_R16_07670.jpg?width=330" alt="Paddy straw and stubble, shade trees for coffee on the hill slope, Balamuri, Coorg, Karnataka, India.">
+<div class="meta"><b>Coffee Shade Trees Paddy Fields Coorg Feb24 R16 07670.jpg</b>
+<span class="badge ot">Coorg, Karnataka</span> <span class="lic">CC BY-SA 4.0</span>
+<div class="by">This Photo was taken by Timothy A. Gonsalves. Feel free to u &middot; 4767 px &middot; <a href="https://commons.wikimedia.org/wiki/File:Coffee_Shade_Trees_Paddy_Fields_Coorg_Feb24_R16_07670.jpg" target="_blank" rel="noopener">source</a></div>
+<div class="alt">Paddy straw and stubble, shade trees for coffee on the hill slope, Balamuri, Coorg, Karnataka, India.</div></div></label></div></section></main>
+<script>function go(){const all=[...document.querySelectorAll('input[data-id]')];const no=all.filter(x=>!x.checked).map(x=>x.dataset.id);
+const t=no.length?('Remove these '+no.length+' photos:\n'+no.join('\n')):'Keep all '+all.length+' photos';document.getElementById('out').value=t;navigator.clipboard&&navigator.clipboard.writeText(t).catch(()=>{});document.getElementById('n').textContent=(all.length-no.length)+' kept, '+no.length+' removed (copied)';}</script></body></html>
