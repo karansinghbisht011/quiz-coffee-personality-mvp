@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { splitName } from "@/lib/display";
+import { franchiseMapsUrl, splitName } from "@/lib/display";
 import { loadData } from "./helpers";
 
 describe("splitName (display only)", () => {
@@ -25,5 +25,13 @@ describe("splitName (display only)", () => {
       if (s.sub) split++;
     }
     expect(split).toBeGreaterThan(5); // there really are names with a subtitle
+  });
+});
+
+describe("franchiseMapsUrl", () => {
+  it("builds a Google Maps search for all outlets in Bengaluru", () => {
+    const url = new URL(franchiseMapsUrl("Over Coffee Cafe & Wine Bar"));
+    expect(url.origin + url.pathname).toBe("https://www.google.com/maps/search/");
+    expect(url.searchParams.get("query")).toBe("Over Coffee Cafe & Wine Bar all outlets Bengaluru");
   });
 });

@@ -33,7 +33,7 @@ OSM/Overture + Zomato/Swiggy + menus --> data/coffee_database.csv, cafe_tags.csv
 
 `web/public/quiz_data.json` (identical to `data/quiz_data.json`; a test fails if they drift):
 
-- `cafes`: object keyed by cafe name: `maps_link` (URL, or `Any` for franchises), `type` (`franchise` or `standalone`), `popularity_rank` (integer or null), `vibe` (array), `crowd` and `setting` (string or null).
+- `cafes`: object keyed by cafe name: `maps_link` (URL, or `Any` for franchises; the UI turns `Any` into a Maps search via `franchiseMapsUrl` in `web/lib/display.ts`), `type` (`franchise` or `standalone`), `popularity_rank` (integer or null), `vibe` (array), `crowd` and `setting` (string or null).
 - `coffees`: array of `{ id, cafe, name, strength, sweetness, milk, temperature, flavour[], adventurousness }`. Blank tags are null. 13 rows carry `temperature: "hot|iced"`, which the engine splits into two tags. No price anywhere.
 - Size at the 2026-10-06 export: 3,286 coffees, 227 cafes, about 640 KB. Vocabulary: REQUIREMENTS section 4 and `specs/tagging-rubric.md`.
 

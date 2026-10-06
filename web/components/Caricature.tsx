@@ -24,6 +24,9 @@ function Person({ kind, shirt, skin, accessory, mood }: { kind: "guy" | "girl"; 
       )}
       {/* girl's back hair */}
       {kind === "girl" && <path d="M58 98 Q48 170 78 178 L90 110Z M162 98 Q172 170 142 178 L130 110Z" fill={hair} />}
+      {/* neck: drawn before the body and head so both overlap its ends */}
+      <path d="M95 130 V180 H125 V130Z" fill={skin} />
+      <path d="M95 160 Q110 170 125 160" fill="none" strokeWidth="2.2" opacity="0.35" />
       {/* body */}
       <path d="M62 250 Q60 176 110 170 Q160 176 158 250Z" fill={shirt} />
       {accessory === "scarf" && <path d="M82 172 Q110 190 138 172 L134 190 Q110 204 86 190Z" fill="var(--auto)" />}

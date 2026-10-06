@@ -36,7 +36,7 @@ A personality quiz that recommends specific coffees from real Bengaluru cafe men
 In scope:
 - Cafes, restaurants, pubs and breweries within 100 km of the centre of Bengaluru, that are popular on Zomato and Swiggy, judged by popularity rank and rating (see section 3). This replaces the earlier "1,000 Google reviews", "300 reviews" and "500 average reviews" rules (user decision, 2026-10-06), so that well-known places and lesser-known cafes worth trying both make the list. Only cafes, coffee places, popular restaurants and breweries are looked up. A restaurant, pub or brewery stays in only if it has a coffee section.
 - Coffee items only. This includes coffee sections labelled "Brews", "Coffee" or "Hot beverages", including those on pub and brewery menus.
-- Franchises (for example Third Wave, Cafe Coffee Day): the `maps_link` value is `Any`, because the menu is the same everywhere. Each franchise is listed once.
+- Franchises (for example Third Wave, Cafe Coffee Day): the `maps_link` value is `Any`, because the menu is the same everywhere. Each franchise is listed once. The app turns `Any` into a Google Maps search link for all that franchise's outlets in Bengaluru (decided 2026-10-06: a dead "Every outlet" label gave users nothing to act on).
 - Standalone and boutique cafes (for example Dyu Art Cafe, Hole in the Wall, Athiya and Appa): each gets its own Maps link.
 
 Out of scope (default):
@@ -159,7 +159,7 @@ Abstract and quirky
   - Exact ties are broken by a seeded hash, not by `popularity_rank` (this replaces the earlier tie-break rule).
   - A **"Show different picks"** button re-draws the results for the same answers. The same answers on different visits can give different picks.
   - Exact formulas and parameters: `specs/scoring-spec.md` "Scoring v2". Coverage targets: section 10.
-- Each result card shows: coffee, cafe, the Maps link (shown only when it is not `Any`), and a short reason that names the matching tags.
+- Each result card shows: coffee, cafe, the Maps button (always shown: a pin link for standalone cafes, an "All outlets" search link for franchises), and a short reason that names the matching tags.
 - The result page shows a Bengaluru scene chosen from the person's answers (section 7b): a curated Bengaluru photo of the scene (section 7), with a caricature (a guy, a girl or both, picked at random) holding a coffee drawn on top. Layout and first-fold targets are in section 7b. Photos of the cafes themselves (the earlier idea of 3 Google Images photos per place) stay dropped for terms-of-service and copyright reasons; scene photos come only from the curated Openverse and Wikimedia Commons pool, with credit (section 7).
 
 ## 7. Look and feel
@@ -168,7 +168,7 @@ Abstract and quirky
   - Colour theme: warm paper and cream backgrounds, coffee-brown primary, leaf-green accents, yellow and rose highlights (the `:root` tokens in the reference).
   - Type: Fraunces for headings, DM Sans for body.
   - Elements: rounded cards, pill chips, a yellow tilted sticker, a dashed "why" box, a landing hero with a start button, a progress bar with a question counter.
-  - Buttons and interactions: brown primary button with a hard bottom shadow, outlined secondary and Maps buttons, option cards that lift on hover and get a brown border when selected, Back and Next flow, a fade-and-rise animation on the result.
+  - Buttons and interactions: brown primary button with a hard bottom shadow, outlined secondary button, a pill-shaped Maps button with a pin-on-map icon, option cards that lift on hover and get a brown border when selected, Back and Next flow, a fade-and-rise animation on the result.
   - Layout: responsive, single column on phones.
   - Differences from the reference: it shows 3 ranked results (not 1) with a reason each, and 8 to 10 questions (not 5).
 - Images (changed 2026-10-06, user decision; this replaces the earlier "no real photos" rule). Photos of the cafes themselves stay out (terms of service and copyright). **Current rule: the result page shows a hand-picked Bengaluru photo from a curated pool, taken from Openverse and Wikimedia Commons**, as the scene backdrop, with our own drawn caricature on top. The user wants specific, interesting pictures, not random search results and not just monuments. Rules:
@@ -269,7 +269,7 @@ Unit and data tests (Vitest):
 How to run (in `web/`): `npm test` (fast unit and data tests), `npm run test:coverage` (the exhaustive run, about 2 minutes), `npm run test:e2e` (browser tests), `npm run test:all` (everything plus lint and type check).
 
 Browser tests (Playwright, with axe for accessibility). They run on the Google Chrome installed on the Mac (Playwright's own browser download times out on this network), with phone sizes emulated by viewport, touch and user agent. **WebKit (Safari's engine) is therefore not tested**; iPhone Safari behaviour is covered only by emulation and should be checked by hand on a real iPhone:
-- Full flow on every test device in section 7a: Next disabled until an answer, Back keeps answers, retake resets, results show 3 cards from 3 cafes, Maps button only when the link is not `Any`.
+- Full flow on every test device in section 7a: Next disabled until an answer, Back keeps answers, retake resets, results show 3 cards from 3 cafes, Maps button on every card: opens the cafe pin, or the all-outlets search for franchises.
 - Scene photo flow (photo URLs intercepted and served from local fixture images, so runs are fast and repeatable): the loader appears, then the photo; the cards are visible before the photo; the credit line shows author, licence and working links; a slow image shows the loader and then the fallback scene; a broken image URL shows the fallback; the photo request starts before Reveal; "Take it again" shows a different photo.
 - Layout: no horizontal overflow, tap targets of at least 44 px, the first-fold rules of sections 7a and 7b, type hierarchy, long-name clamping.
 - Failure states: the data file blocked or slow, a photo that fails to load.
