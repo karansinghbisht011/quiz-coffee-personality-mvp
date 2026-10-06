@@ -2,7 +2,7 @@
 
 A short personality quiz that recommends **three specific coffees from three different Bengaluru cafes**, each with a reason, plus a database of **3,286 coffees across 227 popular cafes and chains** built mostly with free tools.
 
-> **Status (2026-10-06):** the database, the tagging and the quiz app are built and tested (100 unit tests, about 190 browser tests on phone, tablet and desktop sizes, an exhaustive run over all 262,144 possible answer sets). The code is on GitHub (public). Still to do: deploy on Vercel (course lesson 4.5), then add the live link and a screenshot here. `REQUIREMENTS.md` is the source of truth for what the project does, `IMPLEMENTATION.md` for how it is built; this file does not repeat their rules.
+> **Status (2026-10-06):** the database, the tagging and the quiz app are built and tested (100 unit tests, about 190 browser tests on phone, tablet and desktop sizes, an exhaustive run over all 262,144 possible answer sets). The code is on GitHub (public) and the quiz is live on Vercel: **[bengaluru-coffee-test.vercel.app](https://bengaluru-coffee-test.vercel.app/)**. Still to do: add a screenshot here. `REQUIREMENTS.md` is the source of truth for what the project does, `IMPLEMENTATION.md` for how it is built; this file does not repeat their rules.
 
 ## 1. About this project
 
@@ -145,7 +145,7 @@ data/derive_cafe_facts.py  ->  data/menu_signals.py  ->  data/merge_vibe.py  -> 
 
 ## 6. What is next
 
-1. Deploy on Vercel (lesson 4.5) and add the live link and a screenshot to this README. The course path and its small differences are in `REQUIREMENTS.md` section 0.
+1. Add a screenshot of the live quiz to this README. Deployed on Vercel (lesson 4.5) on 2026-10-06; the course path and its small differences are in `REQUIREMENTS.md` section 0. Vercel is connected to the GitHub repo (Root Directory `web`), so every push to `main` deploys automatically.
 2. Further iteration on the app (phases in `REQUIREMENTS.md` section 9), then the detailed caricature set.
 
 ## 7. Declarations: sources, attribution and methods
